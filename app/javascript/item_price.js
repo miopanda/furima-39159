@@ -6,8 +6,8 @@ function item_price (){
     e.preventDefault();
     const inputValue = priceInput.value;
     const taxValue = Math.floor(inputValue / 10);
-    tax.innerHTML = taxValue.toLocaleString();
-    profit.innerHTML = (inputValue - taxValue).toLocaleString();
+    tax.innerHTML = taxValue.toLocaleString('ja-JP', { maximumFractionDigits: 0 });
+    profit.innerHTML = (inputValue - taxValue).toLocaleString('ja-JP', { maximumFractionDigits: 0 });
   });
   
 };

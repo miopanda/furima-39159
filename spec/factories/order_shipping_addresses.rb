@@ -1,8 +1,7 @@
 FactoryBot.define do
   factory :order_shipping_address do
 
-    # association :user
-    # association :item
+    token                 {"tok_abcdefghijk00000000000000000"}
     postal_code           {'123-4567'}
     city                  {'渋谷区'}
     address               {'神南1-12-16'}
